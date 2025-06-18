@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <nav class="sideNav">
+            <div class="name"><h5>skyLence</h5> &nbsp; <i class="fa-brands fa-skyatlas"></i></div>
+                <i class="fa-solid fa-house"></i> <br>
+                <i class="fa-solid fa-bars"></i> <br>
+                <i class="fa-solid fa-location-dot"></i> <br>
+                <i class="fa-solid fa-calendar-days"></i> <br>
+                <i class="fa-solid fa-gear"></i> <br>
+                <i class="fa-solid fa-bell"></i> <br>
+        </nav>
+
+        <section class="middleSection">
+            <header class="headerInputGroup">
+                <input type="text" id="cityInput" placeholder="search for city...">
+                <button class="enterBtn" onclick="getWeather()"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </header>
+
+            <article class="weatherArticle">
+            <div id="weatherResult"></div>
+            <div class="detailedWeather"></div>
+            </article>
+        </section>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
