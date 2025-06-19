@@ -25,14 +25,12 @@
     background-color: black;
 }
 
-.name {
-    margin: 15px;
-    display: flex;
+.fa-solid {
     color: rgb(133, 224, 224);
 }
 
-.fa-solid {
-    color: rgb(133, 224, 224);
+.fa-house{
+    margin-top: 25px;
 }
 
 .sideNav .fa-solid:hover {
@@ -93,7 +91,7 @@
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    color: white;
+    color: rgb(133, 224, 224);
     /* background-color: blueviolet; */
 }
 
@@ -102,14 +100,121 @@
     height: 100%;
     border-radius: 10px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.logoName{
+    width: 16%;
+    height: 15%;
+    color: rgb(133, 224, 224);
+    /* background-color: red; */
+}
+
+.fa-skyatlas{
+    font-size: 3rem;
+}
+
+.name{
+    font-size: small;
+    position: absolute;
+}
+.weatherHeadeInfo{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* background-color: burlywood;  */
+}
+
+.fa-magnifying-glass-location{
+    font-size: 3rem;
+}
+
+.weatherHeadSec{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-weight: bolder;
+    font-size: larger;
+    /* background-color: gray; */
+}
+.local-time{
+    font-size: 10px;
+    color: #bdbaba;
+    margin-top: 5px;
+}
+.weatherResult-Img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    /* background-color: red; */
 }
 #weatherResult img {
-  width: 100px;
-  height: 100px;
+    width: 55%;
 }
+
+.weather-info-row {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    /* background-color: blueviolet; */
+}
+
+.info-box {
+    width: 28%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 20, 20);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.info-Title{
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: #bdbaba;
+}
+.foreCast{
+    width: 90%;
+    height: 45%;
+    border-radius: 10px;
+    background-color: rgb(19, 20, 20);
+}
+
+
 .detailedWeather {
     width: 29%;
     height: 100%;
     border-radius: 10px;
     background-color: black;
+}
+
+.loading {
+  font-size: 1rem;
+  color: #ffeeaa;
+  padding: 10px;
+  text-align: center;
+  animation: blink 20s infinite;
+}
+
+/* Simple blinking animation */
+@keyframes blink {
+  50% { opacity: 0.5; }
 }
