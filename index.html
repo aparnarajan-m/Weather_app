@@ -11,7 +11,7 @@
 
 <body>
     <div class="mainContainer">
-
+    <div class="subContainer">
         <nav class="sideNav">
             <i class="fa-solid fa-house"></i> <br>
             <i class="fa-solid fa-bars"></i> <br>
@@ -22,20 +22,18 @@
         </nav>
 
         <section class="middleSection">
-            <header class="headerInputGroup">
+            <header class="searchArea">
                 <input type="text" id="cityInput" placeholder="search for city...">
-                <button class="enterBtn" onclick="getWeather()"><i
-                        class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                <button class="enterBtn" onclick="getWeather()"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
             </header>
 
-            <article class="weatherArticle">
-                <div id="weatherResult"></div>
-                <div class="detailedWeather"></div>
-            </article>
+            <div id="weatherResult"></div>
         </section>
 
+    </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
